@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casa Lucia | Alojamientos Xenia</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo" aria-label="Inicio">
+                <svg class="logo-svg" viewBox="0 0 200 60" width="160" height="48" xmlns="http://www.w3.org/2000/svg">
+                    <text x="100" y="35" font-family="'Cormorant Garamond', serif" font-size="28" font-weight="600" letter-spacing="4" text-anchor="middle" fill="currentColor">XENIA</text>
+                    <text x="100" y="50" font-family="'Inter', sans-serif" font-size="9" font-weight="300" letter-spacing="6" text-anchor="middle" fill="currentColor">ALOJAMIENTOS</text>
+                </svg>
+            </a>
+            <nav class="nav-links">
+                <a href="index.html#historia">La Historia</a>
+                <a href="index.html#alojamientos">Estancias</a>
+                <a href="index.html#contacto">Contacto</a>
+            </nav>
+            <button class="menu-toggle" aria-label="Abrir menú">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Usando imagen genérica temporal de Chavela para Casa Lucia -->
+    <section class="subpage-hero" style="background-image: url('Imágenes/Chavela/12.jpg');">
+        <div class="hero-overlay"></div>
+        <h1 class="title fade-up">Casa Lucia</h1>
+    </section>
+
+    <div class="container fade-up">
+        <div class="details-grid">
+            <div class="content-wrapper" style="max-width: 100%;">
+                <span class="subtitle-dark">Estudio Planta Baja · 2 a 4 Plazas</span>
+                <h2 class="section-title" style="font-size: 2.5rem;">"Un espacio acogedor y accesible"</h2>
+                <p>Casa Lucia es un precioso estudio situado a pie de calle en la C/ Del Camino de Segura, con acceso directo y totalmente adaptado para <strong>personas con movilidad reducida (PMR)</strong>.</p>
+                <p>Este estudio destaca por su increíble calidez gracias a la maravillosa estufa de biomasa, que lo convierte en el retiro ideal para el invierno, manteniendo a la vez toda la frescura estructural del diseño tradicional para los meses de calor.</p>
+                <p>Equipado con todo lo necesario para hasta 4 personas, es el equilibrio perfecto entre funcionalidad, comodidad y la elegancia clásica de nuestros alojamientos.</p>
+            </div>
+            
+            <div class="amenities-box fade-up">
+                <h3 style="font-size: 1.8rem; margin-bottom: 1rem;">Equipamiento</h3>
+                <ul class="amenities-list">
+                    <li><strong>Descanso Principal:</strong> Cama de 135cm, ropa de cama completa y amplios armarios.</li>
+                    <li><strong>Zona de Estar:</strong> Sofá cama de 135cm (para 2 personas adicionales), mesa auxiliar y TV de pantalla plana.</li>
+                    <li><strong>Cocina + Comedor:</strong> Nevera, Vitrocerámica, Microondas, Cafetera Italiana, menaje completo y mesa de comedor.</li>
+                    <li><strong>Baño:</strong> Completo con ducha adaptada, toallas y productos de aseo.</li>
+                    <li><strong>Climatización:</strong> Excelente y acogedora estufa de biomasa.</li>
+                    <li><strong>Accesibilidad:</strong> Accesos y espacios diseñados para Personas con Movilidad Reducida.</li>
+                    <li><strong>Servicios:</strong> Parking gratis.</li>
+                    <li><strong>Seguridad:</strong> Extintor.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="slider-container fade-up">
+            <div class="slider-track">
+                <img src="Imágenes/Frida/1.jpg" alt="Interior Casa Lucia" class="slide">
+                <img src="Imágenes/Chavela/10.jpg" alt="Baño Casa Lucia" class="slide">
+                <img src="Imágenes/Frida/7.jpg" alt="Cocina Casa Lucia" class="slide">
+                <img src="Imágenes/Chavela/5.jpg" alt="Dormitorio Casa Lucia" class="slide">
+                <img src="Imágenes/Frida/5.jpg" alt="Salón Casa Lucia" class="slide">
+            </div>
+            <button class="slider-btn prev-btn" aria-label="Anterior">&#10094;</button>
+            <button class="slider-btn next-btn" aria-label="Siguiente">&#10095;</button>
+        </div>
+    </div>
+
+    <footer id="contacto" class="footer">
+        <div class="container footer-content">
+            <svg class="footer-logo" viewBox="0 0 200 60" width="160" height="48" xmlns="http://www.w3.org/2000/svg">
+                <text x="100" y="35" font-family="'Cormorant Garamond', serif" font-size="28" font-weight="600" letter-spacing="4" text-anchor="middle" fill="currentColor">XENIA</text>
+                <text x="100" y="50" font-family="'Inter', sans-serif" font-size="9" font-weight="300" letter-spacing="6" text-anchor="middle" fill="currentColor">ALOJAMIENTOS</text>
+            </svg>
+            <p class="copyright">&copy; <script>document.write(new Date().getFullYear())</script> Alojamientos Xenia.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

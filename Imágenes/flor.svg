@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="none" stroke="#8B5E3C" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+  <!-- Tallo central -->
+  <path d="M128,240V128" />
+  <!-- Hoja/Pétalo grande -->
+  <path d="M128,128 c0-40-30-72-70-72 C35,56,16,75,16,100 c0,60,112,140,112,140 s112-80,112-140 c0-25-19-44-42-44 C158,56,128,88,128,128z" />
+  <!-- Nervios internos sutiles -->
+  <path d="M128,128 c0-25-18-48-40-48 c-14,0-24,10-24,24 c0,30,64,80,64,80" stroke-width="1.5" />
+  <path d="M128,128 c0-25,18-48,40-48 c14,0,24,10,24,24 c0,30-64,80-64,80" stroke-width="1.5" />
+</svg>

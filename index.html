@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alojamientos Xenia | Hospitalidad con Historia</title>
+    <meta name="description" content="Descansa en una antigua casa de 1940 restaurada con elegancia. Descubre nuestros alojamientos en un entorno de paz y tradición.">
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts: Cormorant Garamond (Elegante Clásica) e Inter (Limpia) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <!-- Navigation -->
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo" aria-label="Inicio">
+                <svg class="logo-svg" viewBox="0 0 200 60" width="160" height="48" xmlns="http://www.w3.org/2000/svg">
+                    <text x="100" y="35" font-family="'Cormorant Garamond', serif" font-size="28" font-weight="600" letter-spacing="4" text-anchor="middle" fill="currentColor">XENIA</text>
+                    <text x="100" y="50" font-family="'Inter', sans-serif" font-size="9" font-weight="300" letter-spacing="6" text-anchor="middle" fill="currentColor">ALOJAMIENTOS</text>
+                </svg>
+            </a>
+            <nav class="nav-links">
+                <a href="historia.html">La Historia</a>
+                <a href="#alojamientos">Estancias</a>
+                <a href="#entorno">Entorno</a>
+                <a href="#contacto">Contacto</a>
+            </nav>
+            <button class="menu-toggle" aria-label="Abrir menú">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Full-screen Hero Section -->
+    <section class="hero" style="background-image: url('Imágenes/Frida/8.jpg');">
+        <div class="hero-overlay"></div>
+        <div class="hero-content fade-in">
+            <span class="subtitle">Descanso & Tradición</span>
+            <h1 class="title">Siente el alma<br>de nuestras raíces</h1>
+            <a href="#alojamientos" class="btn-outline">Descubrir Alojamientos</a>
+        </div>
+    </section>
+
+    <!-- Historia: 50/50 Split -->
+    <section id="historia" class="section history-split">
+        <div class="split-col text-col fade-up">
+            <div class="content-wrapper">
+                <span class="subtitle-dark">El Origen</span>
+                <h2 class="section-title">Una Casa con Memoria</h2>
+                <p>Nuestros alojamientos nacen en una antigua casa que data del año 1940. Hemos conservado los materiales nobles de la época: piedra, arena y teja árabe, respetando su arquitectura tradicional y esencia rústica.</p>
+                <p>Para los griegos, <strong>Xenia</strong> era la Diosa de la hospitalidad. Ese es nuestro propósito: que cada visitante sienta la calidez y elegancia de un verdadero hogar rural.</p>
+                <a href="historia.html" class="link-line">Leer toda la historia</a>
+            </div>
+        </div>
+        <div class="split-col img-col reveal-image">
+            <img src="Imágenes/Frida/5.jpg" alt="Detalles de la casa de piedra" class="cover-img parallax">
+        </div>
+    </section>
+
+    <!-- Alojamientos: Alternating Rows -->
+    <section id="alojamientos" class="section accommodations-list">
+        <div class="container-narrow text-center fade-up">
+            <h2 class="section-title">Nuestras Estancias</h2>
+            <div class="divider"></div>
+            <p class="intro-text">Cada uno de nuestros apartamentos ha sido diseñado minuciosamente para ofrecer confort moderno en un envoltorio tradicional. Conozca nuestros espacios.</p>
+        </div>
+
+        <!-- Chavela -->
+        <article class="apt-row">
+            <div class="apt-img reveal-image">
+                <img src="Imágenes/Chavela/4.jpg" alt="Casa Chavela">
+            </div>
+            <div class="apt-text fade-up">
+                <div class="apt-icon" title="Homenaje a Chavela Vargas">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
+                </div>
+                <h3>Casa Chavela</h3>
+                <span class="apt-meta">4 Plazas | Planta Baja</span>
+                <p class="apt-quote">"Uno vuelve a los viejos sitios donde amó la vida"</p>
+                <p>Dos acogedoras habitaciones con cama de matrimonio, salón completo y cocina perfectamente equipada. Fresca en verano y cálida en invierno gracias a la estructura subterránea de la planta baja.</p>
+                <a href="chavela.html" class="link-line">Ver Detalles</a>
+            </div>
+        </article>
+
+        <!-- Frida -->
+        <article class="apt-row reverse">
+            <div class="apt-img reveal-image">
+                <img src="Imágenes/Frida/4.jpg" alt="Casa Frida">
+            </div>
+            <div class="apt-text fade-up">
+                <div class="apt-icon" title="Homenaje a Frida Kahlo">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M12 22C17.5 22 22 17.5 22 12C22 6.5 17.5 2 12 2C6.5 2 2 6.5 2 12C2 15.5 4 17 6 17C7.5 17 8 16 8 14.5C8 13.5 9.5 12 11 12C12.5 12 14 13.5 14 15.5C14 18.5 10.5 22 12 22Z"/><circle cx="7.5" cy="10.5" r="1.5" fill="currentColor"/><circle cx="10.5" cy="6.5" r="1.5" fill="currentColor"/><circle cx="15.5" cy="7.5" r="1.5" fill="currentColor"/></svg>
+                </div>
+                <h3>Casa Frida</h3>
+                <span class="apt-meta">5 Plazas | Planta Baja</span>
+                <p class="apt-quote">"Si quiero la luna me la bajo yo solita"</p>
+                <p>Amplio apartamento familiar. Dispone de habitación doble y de matrimonio, además de una recepción con sofá cama individual y una atmósfera sumamente inspiradora.</p>
+                <a href="frida.html" class="link-line">Ver Detalles</a>
+            </div>
+        </article>
+
+        <!-- Sabina -->
+        <article class="apt-row">
+            <div class="apt-img reveal-image">
+                <img src="Imágenes/Sabina/6.jpg" alt="Estudio Sabina">
+            </div>
+            <div class="apt-text fade-up">
+                <div class="apt-icon" title="Homenaje a Joaquín Sabina">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M3 17h18M6 17v-4c0-3.5 3-6 6-6s6 2.5 6 6v4M8 14h8"/></svg>
+                </div>
+                <h3>Estudio Sabina</h3>
+                <span class="apt-meta">2 Plazas | Planta 1</span>
+                <p class="apt-quote">"Nos sobran los motivos"</p>
+                <p>Un coqueto y luminoso estudio construido en las antiguas cámaras con materiales modernos. Cuenta con zona de estar, cocina equipada y es el rincón ideal para parejas.</p>
+                <a href="sabina.html" class="link-line">Ver Detalles</a>
+            </div>
+        </article>
+
+        <!-- Lucia -->
+        <article class="apt-row reverse">
+            <div class="apt-img reveal-image">
+                <img src="Imágenes/Chavela/12.jpg" alt="Casa Lucia"> <!-- Placeholder -->
+            </div>
+            <div class="apt-text fade-up">
+                <h3>Casa Lucia</h3>
+                <span class="apt-meta">2-4 Plazas | Estudio (Acceso PMR)</span>
+                <p>Ubicado en la calle del Camino de Segura, este acogedor estudio está adaptado para personas de movilidad reducida. Dispone de estufa de biomasa y sofá cama adicional.</p>
+                <a href="lucia.html" class="link-line">Ver Detalles</a>
+            </div>
+        </article>
+
+    </section>
+
+    <!-- Testimonios -->
+    <section class="section testimonials">
+        <div class="container text-center fade-up">
+            <span class="subtitle-dark">Experiencias</span>
+            <h2 class="section-title">Lo que dicen nuestros huéspedes</h2>
+            <div class="divider"></div>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <span class="quote-mark">"</span>
+                    <p class="testimonial-text">Un remanso de paz absoluto. La Casa Frida tiene un encanto especial que invita a desconectar y a leer un buen libro. El entorno de las montañas es impagable.</p>
+                    <p class="testimonial-author">— María y Carlos</p>
+                </div>
+                <div class="testimonial-card">
+                    <span class="quote-mark">"</span>
+                    <p class="testimonial-text">El Estudio Sabina es pequeñito pero con un gusto exquisito. Los detalles de piedra antigua contrastan perfectamente con la comodidad moderna. Volveremos sin dudarlo.</p>
+                    <p class="testimonial-author">— David L.</p>
+                </div>
+                <div class="testimonial-card">
+                    <span class="quote-mark">"</span>
+                    <p class="testimonial-text">Nos alojamos en Casa Chavela toda la familia y fue una experiencia maravillosa. Los muros de piedra hacen que sea un refugio fresquito en verano. La hospitalidad hace honor a su nombre.</p>
+                    <p class="testimonial-author">— Familia Roldán</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Entorno: 50/50 Split Reverse -->
+    <section id="entorno" class="section history-split">
+        <div class="split-col img-col reveal-image">
+            <img src="Imágenes/Entorno/Presa de la Vieja-1.jpg" alt="Entorno de la Sierra de Segura" class="cover-img parallax">
+        </div>
+        <div class="split-col text-col fade-up">
+            <div class="content-wrapper">
+                <span class="subtitle-dark">Sierra de Segura</span>
+                <h2 class="section-title">Naturaleza en estado puro</h2>
+                <p>Ubicados en el corazón de la Sierra de Segura, nuestros alojamientos son el punto de partida perfecto para desconectar. Un entorno privilegiado donde el silencio solo es interrumpido por la brisa en los pinos centenarios.</p>
+                <p>Nuestra casa se encuentra en la entrada natural del pueblo, ofreciendo vistas directas a la majestuosa montaña y a un pequeño parque arbolado frente a nuestra puerta. Es el lugar ideal para quienes transitan el histórico Camino de San Juan de la Cruz o buscan perderse en rutas de senderismo y pozas de agua cristalina.</p>
+                <p>Ven y déjate envolver por la paz, el aire limpio y la belleza indomable de nuestra comarca.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contacto" class="footer">
+        <div class="container footer-content">
+            <svg class="footer-logo" viewBox="0 0 200 60" width="160" height="48" xmlns="http://www.w3.org/2000/svg">
+                <text x="100" y="35" font-family="'Cormorant Garamond', serif" font-size="28" font-weight="600" letter-spacing="4" text-anchor="middle" fill="currentColor">XENIA</text>
+                <text x="100" y="50" font-family="'Inter', sans-serif" font-size="9" font-weight="300" letter-spacing="6" text-anchor="middle" fill="currentColor">ALOJAMIENTOS</text>
+            </svg>
+            <div class="footer-details">
+                <p>C/ Juan XXIII, Nº 30</p>
+                <p>C/ Del camino de Segura (Estudio Lucia)</p>
+                <p>info@alojamientosxenia.com | +34 123 456 789</p>
+            </div>
+            <div class="footer-nav">
+                <a href="#historia">La Historia</a>
+                <a href="#alojamientos">Estancias</a>
+                <a href="#entorno">El Entorno</a>
+            </div>
+            <div class="divider"></div>
+            <p class="copyright">&copy; <script>document.write(new Date().getFullYear())</script> Alojamientos Xenia. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
