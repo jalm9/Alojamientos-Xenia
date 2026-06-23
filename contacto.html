@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | Alojamientos Xenia</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <!-- Navigation -->
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo" aria-label="Inicio">
+                <svg class="logo-svg" viewBox="0 0 200 60" width="160" height="48" xmlns="http://www.w3.org/2000/svg">
+                    <text x="100" y="35" font-family="'Cormorant Garamond', serif" font-size="28" font-weight="600" letter-spacing="4" text-anchor="middle" fill="currentColor">XENIA</text>
+                    <text x="100" y="50" font-family="'Inter', sans-serif" font-size="9" font-weight="300" letter-spacing="6" text-anchor="middle" fill="currentColor">ALOJAMIENTOS</text>
+                </svg>
+            </a>
+            <nav class="nav-links">
+                <a href="historia.html">La Historia</a>
+                <div class="nav-dropdown">
+                    <a href="index.html#alojamientos" class="nav-dropdown-trigger">Alojamientos</a>
+                    <div class="nav-dropdown-menu">
+                        <a href="chavela.html">Casa Chavela</a>
+                        <a href="frida.html">Casa Frida</a>
+                        <a href="sabina.html">Estudio Sabina</a>
+                        <a href="lucia.html">Casa Lucia</a>
+                    </div>
+                </div>
+                <a href="entorno.html">Entorno</a>
+                <a href="contacto.html">Contacto</a>
+            </nav>
+            <div class="nav-action">
+                <a href="index.html#alojamientos" class="kondo-btn-primary">Reservar</a>
+                <button class="menu-toggle" aria-label="Abrir menú">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section (Kondo Style) -->
+    <section class="kondo-hero" style="height: 60vh; min-height: 400px;">
+        <div class="kondo-hero-bg" style="background-image: url('Imágenes/Sabina/6.jpg');"></div>
+        <div class="kondo-hero-overlay"></div>
+        <div class="container kondo-hero-container" style="justify-content: center;">
+            <div class="kondo-hero-content fade-up" style="text-align: center;">
+                <span class="subtitle kondo-subtitle">Ponte en contacto</span>
+                <h1 class="title kondo-title" style="margin-bottom: 0;">Contáctanos</h1>
+            </div>
+        </div>
+    </section>
+
+    <!-- Formulario y Mapa (Kondo Style) -->
+    <section class="section kondo-about" style="padding-top: var(--space-xl);">
+        <div class="container kondo-about-grid">
+            <div class="kondo-about-content fade-up">
+                <span class="subtitle-dark kondo-subtitle-dark">Escríbenos</span>
+                <h2 class="section-title kondo-heading">Estamos aquí para ayudarte</h2>
+                <p class="kondo-text-light">Ya sea que quieras hacer una reserva, tengas alguna duda sobre nuestros alojamientos o simplemente quieras saber más sobre el entorno de la Sierra de Segura, nos encantará escucharte.</p>
+                
+                <div style="margin-top: 3rem; display: flex; flex-direction: column; gap: 1.5rem;">
+                    <div>
+                        <h4 style="font-family: var(--font-heading); font-size: 1.5rem; color: var(--color-text);">📍 Dirección</h4>
+                        <p class="kondo-text-light">C/ Juan XXIII, Nº 30, Sierra de Segura</p>
+                    </div>
+                    <div>
+                        <h4 style="font-family: var(--font-heading); font-size: 1.5rem; color: var(--color-text);">✉️ Email</h4>
+                        <p class="kondo-text-light">info@alojamientosxenia.com</p>
+                    </div>
+                    <div>
+                        <h4 style="font-family: var(--font-heading); font-size: 1.5rem; color: var(--color-text);">📞 Teléfono</h4>
+                        <p class="kondo-text-light">+34 123 456 789</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="kondo-about-content fade-up" style="background: var(--color-bg-alt); padding: 3rem; border: 1px solid var(--color-border);">
+                <form class="contact-form" style="display: flex; flex-direction: column; gap: 1.5rem;">
+                    <div>
+                        <label for="nombre" style="display: block; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--color-text-light); margin-bottom: 0.5rem;">Nombre</label>
+                        <input type="text" id="nombre" style="width: 100%; padding: 1rem; border: 1px solid var(--color-border); font-family: var(--font-body); background: var(--color-bg); outline: none;">
+                    </div>
+                    <div>
+                        <label for="email" style="display: block; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--color-text-light); margin-bottom: 0.5rem;">Email</label>
+                        <input type="email" id="email" style="width: 100%; padding: 1rem; border: 1px solid var(--color-border); font-family: var(--font-body); background: var(--color-bg); outline: none;">
+                    </div>
+                    <div>
+                        <label for="mensaje" style="display: block; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--color-text-light); margin-bottom: 0.5rem;">Mensaje</label>
+                        <textarea id="mensaje" rows="6" style="width: 100%; padding: 1rem; border: 1px solid var(--color-border); font-family: var(--font-body); background: var(--color-bg); outline: none; resize: vertical;"></textarea>
+                    </div>
+                    <button type="button" class="kondo-btn-primary" style="background: var(--color-text); color: #fff; text-transform: uppercase; letter-spacing: 0.15em; font-size: 0.8rem; border: none; cursor: pointer; padding: 1rem; width: 100%; text-align: center; margin-top: 1rem; transition: opacity 0.3s;" onmouseover="this.style.opacity=0.8" onmouseout="this.style.opacity=1">Enviar Mensaje</button>
+                </form>
+            </div>
+        </div>
+        
+        <!-- Google Maps -->
+        <div class="container fade-up" style="margin-top: var(--space-xl);">
+            <div style="width: 100%; height: 450px; border-radius: 8px; overflow: hidden; border: 1px solid var(--color-border); box-shadow: 0 12px 40px rgba(0,0,0,0.05);">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12574.675549007421!2d-2.6560869!3d38.2930777!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6f74f7b4c6e91f%3A0x63351a9a4604928e!2sSierra%20de%20Segura!5e0!3m2!1ses!2ses!4v1700000000000!5m2!1ses!2ses" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer kondo-footer">
+        <div class="container">
+            <div class="kondo-footer-grid">
+                <div class="kondo-footer-brand">
+                    <svg class="footer-logo" viewBox="0 0 200 60" width="160" height="48" xmlns="http://www.w3.org/2000/svg">
+                        <text x="100" y="35" font-family="'Cormorant Garamond', serif" font-size="28" font-weight="600" letter-spacing="4" text-anchor="middle" fill="currentColor">XENIA</text>
+                        <text x="100" y="50" font-family="'Inter', sans-serif" font-size="9" font-weight="300" letter-spacing="6" text-anchor="middle" fill="currentColor">ALOJAMIENTOS</text>
+                    </svg>
+                    <p class="kondo-text-light">Hospitalidad con historia en un entorno natural sin igual.</p>
+                </div>
+                <div class="kondo-footer-contact">
+                    <h4>Contacto</h4>
+                    <p>C/ Juan XXIII, Nº 30</p>
+                    <p>info@alojamientosxenia.com</p>
+                    <p>+34 123 456 789</p>
+                </div>
+                <div class="kondo-footer-links">
+                    <h4>Enlaces</h4>
+                    <a href="historia.html">La Historia</a>
+                    <a href="index.html#alojamientos">Alojamientos</a>
+                    <a href="entorno.html">El Entorno</a>
+                    <a href="contacto.html">Contacto</a>
+                </div>
+            </div>
+            <div class="kondo-footer-bottom">
+                <p>&copy; <script>document.write(new Date().getFullYear())</script> Alojamientos Xenia. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

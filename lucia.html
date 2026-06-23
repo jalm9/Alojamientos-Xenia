@@ -5,10 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Casa Lucia | Alojamientos Xenia</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
     
+    <!-- Navigation -->
     <header class="navbar">
         <div class="container nav-container">
             <a href="index.html" class="logo" aria-label="Inicio">
@@ -18,67 +22,146 @@
                 </svg>
             </a>
             <nav class="nav-links">
-                <a href="index.html#historia">La Historia</a>
-                <a href="index.html#alojamientos">Estancias</a>
-                <a href="index.html#contacto">Contacto</a>
+                <a href="historia.html">La Historia</a>
+                <div class="nav-dropdown">
+                    <a href="index.html#alojamientos" class="nav-dropdown-trigger">Alojamientos</a>
+                    <div class="nav-dropdown-menu">
+                        <a href="chavela.html">Casa Chavela</a>
+                        <a href="frida.html">Casa Frida</a>
+                        <a href="sabina.html">Estudio Sabina</a>
+                        <a href="lucia.html">Casa Lucia</a>
+                    </div>
+                </div>
+                <a href="entorno.html">Entorno</a>
+                <a href="contacto.html">Contacto</a>
             </nav>
-            <button class="menu-toggle" aria-label="Abrir menú">
-                <span></span><span></span><span></span>
-            </button>
+            <div class="nav-action">
+                <a href="index.html#alojamientos" class="kondo-btn-primary">Reservar</a>
+                <button class="menu-toggle" aria-label="Abrir menú">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
         </div>
     </header>
 
-    <!-- Usando imagen genérica temporal de Chavela para Casa Lucia -->
-    <section class="subpage-hero" style="background-image: url('Imágenes/Chavela/12.jpg');">
-        <div class="hero-overlay"></div>
-        <h1 class="title fade-up">Casa Lucia</h1>
+    <!-- Hero Section -->
+    <section class="kondo-hero" style="height: 60vh; min-height: 400px;">
+        <div class="kondo-hero-bg" style="background-image: url('Imágenes/Lucía/apartamento_lucía.jpg');"></div>
+        <div class="kondo-hero-overlay"></div>
+        <div class="container kondo-hero-container" style="justify-content: center;">
+            <div class="kondo-hero-content fade-up" style="text-align: center;">
+                <span class="subtitle kondo-subtitle">Estudio Planta Baja · 2 a 4 Plazas</span>
+                <h1 class="title kondo-title" style="margin-bottom: 0;">Casa Lucia</h1>
+            </div>
+        </div>
     </section>
 
-    <div class="container fade-up">
-        <div class="details-grid">
-            <div class="content-wrapper" style="max-width: 100%;">
-                <span class="subtitle-dark">Estudio Planta Baja · 2 a 4 Plazas</span>
-                <h2 class="section-title" style="font-size: 2.5rem;">"Un espacio acogedor y accesible"</h2>
-                <p>Casa Lucia es un precioso estudio situado a pie de calle en la C/ Del Camino de Segura, con acceso directo y totalmente adaptado para <strong>personas con movilidad reducida (PMR)</strong>.</p>
-                <p>Este estudio destaca por su increíble calidez gracias a la maravillosa estufa de biomasa, que lo convierte en el retiro ideal para el invierno, manteniendo a la vez toda la frescura estructural del diseño tradicional para los meses de calor.</p>
-                <p>Equipado con todo lo necesario para hasta 4 personas, es el equilibrio perfecto entre funcionalidad, comodidad y la elegancia clásica de nuestros alojamientos.</p>
+    <!-- Content: Description + Equipment -->
+    <section class="apt-detail-section">
+        <div class="container apt-detail-grid">
+            <!-- Left: Description -->
+            <div class="apt-detail-description fade-up">
+                <span class="apt-detail-label">La Experiencia</span>
+                <h2 class="apt-detail-heading">Un espacio acogedor y accesible</h2>
+                <p class="apt-detail-text">Casa Lucia es un precioso estudio situado a pie de calle en la C/ Del Camino de Segura, con acceso directo y totalmente adaptado para <strong>personas con movilidad reducida (PMR)</strong>.</p>
+                <p class="apt-detail-text">Este estudio destaca por su increíble calidez gracias a la maravillosa estufa de biomasa, que lo convierte en el retiro ideal para el invierno, manteniendo a la vez toda la frescura estructural del diseño tradicional para los meses de calor.</p>
+                <p class="apt-detail-text">Equipado con todo lo necesario para hasta 4 personas, es el equilibrio perfecto entre funcionalidad, comodidad y la elegancia clásica de nuestros alojamientos.</p>
+
+                <!-- Decorative divider -->
+                <div class="apt-detail-divider">
+                    <svg class="apt-detail-divider-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line></svg>
+                </div>
+
+                <!-- Key highlights -->
+                <div class="apt-detail-highlights">
+                    <div class="apt-highlight-item">
+                        <span class="apt-highlight-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="currentColor" opacity="0.2"/><path d="M12 21A9 9 0 1012 3a9 9 0 000 18z" stroke="currentColor" fill="none" stroke-width="1.5"/><path d="M10 16v-3a2 2 0 012-2h1m-1-4h.01" stroke="currentColor" fill="none" stroke-width="1.5" stroke-linecap="round"/></svg></span>
+                        Acceso PMR
+                    </div>
+                    <div class="apt-highlight-item">
+                        <span class="apt-highlight-icon"><svg viewBox="0 0 24 24"><path d="M12 21c-4 0-6-3-6-6 0-3 3-5 5-8 1 2 2 3 3 5s2 4 2 5c0 3-2 6-4 6z" fill="currentColor" opacity="0.2"/><path d="M12 21c-4 0-6-3-6-6 0-3 3-5 5-8 1 2 2 3 3 5s2 4 2 5c0 3-2 6-4 6z" stroke="currentColor" fill="none" stroke-width="1.5"/></svg></span>
+                        Estufa biomasa
+                    </div>
+                    <div class="apt-highlight-item">
+                        <span class="apt-highlight-icon"><svg viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="2" fill="currentColor" opacity="0.2"/><rect x="4" y="4" width="16" height="16" rx="2" stroke="currentColor" fill="none" stroke-width="1.5"/><path d="M9 16V8h4a3 3 0 010 6H9" stroke="currentColor" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                        Parking gratis
+                    </div>
+                </div>
             </div>
-            
-            <div class="amenities-box fade-up">
-                <h3 style="font-size: 1.8rem; margin-bottom: 1rem;">Equipamiento</h3>
-                <ul class="amenities-list">
-                    <li><strong>Descanso Principal:</strong> Cama de 135cm, ropa de cama completa y amplios armarios.</li>
-                    <li><strong>Zona de Estar:</strong> Sofá cama de 135cm (para 2 personas adicionales), mesa auxiliar y TV de pantalla plana.</li>
-                    <li><strong>Cocina + Comedor:</strong> Nevera, Vitrocerámica, Microondas, Cafetera Italiana, menaje completo y mesa de comedor.</li>
-                    <li><strong>Baño:</strong> Completo con ducha adaptada, toallas y productos de aseo.</li>
-                    <li><strong>Climatización:</strong> Excelente y acogedora estufa de biomasa.</li>
-                    <li><strong>Accesibilidad:</strong> Accesos y espacios diseñados para Personas con Movilidad Reducida.</li>
-                    <li><strong>Servicios:</strong> Parking gratis.</li>
-                    <li><strong>Seguridad:</strong> Extintor.</li>
+
+            <!-- Right: Equipment -->
+            <div class="apt-detail-equipment fade-up">
+                <div class="apt-equipment-header">
+                    <svg class="apt-equipment-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"></path></svg>
+                    <h3>Equipamiento</h3>
+                </div>
+                <ul class="apt-equipment-list">
+                    <li><span class="apt-equip-bullet"></span><strong>Descanso Principal:</strong> Cama de 135cm, ropa de cama completa y amplios armarios.</li>
+                    <li><span class="apt-equip-bullet"></span><strong>Zona de Estar:</strong> Sofá cama de 135cm (para 2 pax adicionales), mesa auxiliar y TV.</li>
+                    <li><span class="apt-equip-bullet"></span><strong>Cocina + Comedor:</strong> Nevera, Vitrocerámica, Microondas, Cafetera, menaje y mesa comedor.</li>
+                    <li><span class="apt-equip-bullet"></span><strong>Baño:</strong> Completo con ducha adaptada, toallas y productos de aseo.</li>
+                    <li><span class="apt-equip-bullet"></span><strong>Climatización:</strong> Excelente y acogedora estufa de biomasa.</li>
+                    <li><span class="apt-equip-bullet"></span><strong>Accesibilidad:</strong> Adaptado para PMR.</li>
+                    <li><span class="apt-equip-bullet"></span><strong>Servicios:</strong> Parking gratis.</li>
+                    <li><span class="apt-equip-bullet"></span><strong>Seguridad:</strong> Extintor.</li>
                 </ul>
             </div>
         </div>
+    </section>
 
-        <div class="slider-container fade-up">
-            <div class="slider-track">
-                <img src="Imágenes/Frida/1.jpg" alt="Interior Casa Lucia" class="slide">
-                <img src="Imágenes/Chavela/10.jpg" alt="Baño Casa Lucia" class="slide">
-                <img src="Imágenes/Frida/7.jpg" alt="Cocina Casa Lucia" class="slide">
-                <img src="Imágenes/Chavela/5.jpg" alt="Dormitorio Casa Lucia" class="slide">
-                <img src="Imágenes/Frida/5.jpg" alt="Salón Casa Lucia" class="slide">
-            </div>
+    <!-- Vertical Portrait Slider -->
+    <div class="slider-container slider-vertical-full fade-up">
+        <div class="slider-section-header">
+            <h3 class="slider-section-title">Galería</h3>
+            <span class="slider-section-count">11 imágenes</span>
+        </div>
+        <div class="slider-track">
+            <img src="Imágenes/Lucía/apartamento_lucía_1.jpg" alt="Interior Casa Lucia" class="slide">
+            <img src="Imágenes/Lucía/apartamento_lucía_2.jpg" alt="Salón Casa Lucia" class="slide">
+            <img src="Imágenes/Lucía/apartamento_lucía_3.jpg" alt="Cocina Casa Lucia" class="slide">
+            <img src="Imágenes/Lucía/apartamento_lucía_4.jpg" alt="Dormitorio Casa Lucia" class="slide">
+            <img src="Imágenes/Lucía/apartamento_lucía_5.jpg" alt="Zona de Estar Casa Lucia" class="slide">
+            <img src="Imágenes/Lucía/apartamento_lucía_6.jpg" alt="Detalle Casa Lucia" class="slide">
+            <img src="Imágenes/Lucía/apartamento_lucía_7.jpg" alt="Baño Casa Lucia" class="slide">
+            <img src="Imágenes/Lucía/apartamento_lucía_8.jpg" alt="Vista Casa Lucia" class="slide">
+            <img src="Imágenes/Lucía/apartamento_lucía_9.jpg" alt="Equipamiento Casa Lucia" class="slide">
+            <img src="Imágenes/Lucía/apartamento_lucía_10.jpg" alt="Estufa biomasa Casa Lucia" class="slide">
+            <img src="Imágenes/Lucía/apartamento_lucía_11.jpg" alt="Exterior Casa Lucia" class="slide">
+        </div>
+        <div class="slider-controls">
             <button class="slider-btn prev-btn" aria-label="Anterior">&#10094;</button>
             <button class="slider-btn next-btn" aria-label="Siguiente">&#10095;</button>
         </div>
     </div>
 
-    <footer id="contacto" class="footer">
-        <div class="container footer-content">
-            <svg class="footer-logo" viewBox="0 0 200 60" width="160" height="48" xmlns="http://www.w3.org/2000/svg">
-                <text x="100" y="35" font-family="'Cormorant Garamond', serif" font-size="28" font-weight="600" letter-spacing="4" text-anchor="middle" fill="currentColor">XENIA</text>
-                <text x="100" y="50" font-family="'Inter', sans-serif" font-size="9" font-weight="300" letter-spacing="6" text-anchor="middle" fill="currentColor">ALOJAMIENTOS</text>
-            </svg>
-            <p class="copyright">&copy; <script>document.write(new Date().getFullYear())</script> Alojamientos Xenia.</p>
+    <!-- Footer -->
+    <footer class="footer kondo-footer">
+        <div class="container">
+            <div class="kondo-footer-grid">
+                <div class="kondo-footer-brand">
+                    <svg class="footer-logo" viewBox="0 0 200 60" width="160" height="48" xmlns="http://www.w3.org/2000/svg">
+                        <text x="100" y="35" font-family="'Cormorant Garamond', serif" font-size="28" font-weight="600" letter-spacing="4" text-anchor="middle" fill="currentColor">XENIA</text>
+                        <text x="100" y="50" font-family="'Inter', sans-serif" font-size="9" font-weight="300" letter-spacing="6" text-anchor="middle" fill="currentColor">ALOJAMIENTOS</text>
+                    </svg>
+                    <p class="kondo-text-light">Hospitalidad con historia en un entorno natural sin igual.</p>
+                </div>
+                <div class="kondo-footer-contact">
+                    <h4>Contacto</h4>
+                    <p>C/ Juan XXIII, Nº 30</p>
+                    <p>info@alojamientosxenia.com</p>
+                    <p>+34 123 456 789</p>
+                </div>
+                <div class="kondo-footer-links">
+                    <h4>Enlaces</h4>
+                    <a href="historia.html">La Historia</a>
+                    <a href="index.html#alojamientos">Alojamientos</a>
+                    <a href="entorno.html">El Entorno</a>
+                    <a href="contacto.html">Contacto</a>
+                </div>
+            </div>
+            <div class="kondo-footer-bottom">
+                <p>&copy; <script>document.write(new Date().getFullYear())</script> Alojamientos Xenia. Todos los derechos reservados.</p>
+            </div>
         </div>
     </footer>
 

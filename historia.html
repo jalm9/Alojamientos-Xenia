@@ -5,10 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nuestra Historia | Alojamientos Xenia</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
     
+    <!-- Navigation -->
     <header class="navbar">
         <div class="container nav-container">
             <a href="index.html" class="logo" aria-label="Inicio">
@@ -18,74 +22,120 @@
                 </svg>
             </a>
             <nav class="nav-links">
-                <a href="index.html#historia">La Historia</a>
-                <a href="index.html#alojamientos">Estancias</a>
-                <a href="index.html#contacto">Contacto</a>
+                <a href="historia.html">La Historia</a>
+                <div class="nav-dropdown">
+                    <a href="index.html#alojamientos" class="nav-dropdown-trigger">Alojamientos</a>
+                    <div class="nav-dropdown-menu">
+                        <a href="chavela.html">Casa Chavela</a>
+                        <a href="frida.html">Casa Frida</a>
+                        <a href="sabina.html">Estudio Sabina</a>
+                        <a href="lucia.html">Casa Lucia</a>
+                    </div>
+                </div>
+                <a href="entorno.html">Entorno</a>
+                <a href="contacto.html">Contacto</a>
             </nav>
-            <button class="menu-toggle" aria-label="Abrir menú">
-                <span></span><span></span><span></span>
-            </button>
+            <div class="nav-action">
+                <a href="index.html#alojamientos" class="kondo-btn-primary">Reservar</a>
+                <button class="menu-toggle" aria-label="Abrir menú">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
         </div>
     </header>
 
-    <section class="subpage-hero" style="background-image: url('Imágenes/Frida/1.jpg');">
-        <div class="hero-overlay"></div>
-        <h1 class="title fade-up">Nuestras Raíces</h1>
+    <!-- Hero Section (Kondo Style) -->
+    <section class="kondo-hero" style="height: 60vh; min-height: 400px;">
+        <div class="kondo-hero-bg" style="background-image: url('Imágenes/Frida/1.jpg');"></div>
+        <div class="kondo-hero-overlay"></div>
+        <div class="container kondo-hero-container" style="justify-content: center;">
+            <div class="kondo-hero-content fade-up" style="text-align: center;">
+                <span class="subtitle kondo-subtitle">Tradición Familiar</span>
+                <h1 class="title kondo-title" style="margin-bottom: 0;">Nuestras Raíces</h1>
+            </div>
+        </div>
     </section>
 
-    <div class="container fade-up">
-        <div class="details-grid">
-            <div class="content-wrapper" style="max-width: 100%;">
-                <h2 class="section-title">El Origen de Xenia</h2>
-                <p>Nuestros alojamientos han sido realizados en una antigua casa que data del año 1940. Hemos respetado la arquitectura tradicional conservando todo lo servible por respeto a la familia que la construyó y le sirvió de morada. Los materiales de construcción son los propios de la época y del entorno: piedra, arena y teja árabe.</p>
-                <p>La casa consta de una planta baja parcialmente enterrada por la parte trasera, lo que garantiza una temperatura perfecta: sorprendentemente fresca en verano y maravillosamente cálida en invierno.</p>
-                
-                <h3 style="margin-top: var(--space-lg); font-size: 2rem; margin-bottom: 1rem;">El Significado de Xenia</h3>
-                <p>El nombre de <strong>XENIA</strong> proviene de la antigua cultura griega. Xenia era considerada por los griegos como la Diosa de la hospitalidad. Nuestro propósito es precisamente ese: dar posada a peregrinos que transitan el camino de San Juan de la Cruz, a turistas que vienen a conocer nuestra comarca, y a aquellas personas que nacieron aquí, emigraron, y ahora vuelven buscando reconectar con sus raíces.</p>
-                <p>Queremos que todo aquel que nos visite sienta la profunda hospitalidad de nuestra casa y de sus anfitriones.</p>
+    <!-- Content: Description + Features -->
+    <section class="apt-detail-section">
+        <div class="container apt-detail-grid">
+            <!-- Left: Description -->
+            <div class="apt-detail-description fade-up">
+                <span class="apt-detail-label">Nuestros Cimientos</span>
+                <h2 class="apt-detail-heading">El origen y el significado</h2>
+                <p class="apt-detail-text">Nuestros alojamientos han sido realizados en una antigua casa que data del año 1940. Hemos respetado la arquitectura tradicional conservando todo lo servible por respeto a la familia que la construyó y le sirvió de morada. Los materiales de construcción son los propios de la época y del entorno: piedra, arena y teja árabe.</p>
+                <p class="apt-detail-text">El nombre de <strong>XENIA</strong> proviene de la antigua cultura griega, donde era considerada la Diosa de la hospitalidad. Nuestro propósito es precisamente ese: dar posada a peregrinos que transitan el camino de San Juan de la Cruz, a turistas que vienen a conocer nuestra comarca, y a personas que buscan reconectar con sus raíces.</p>
+                <p class="apt-detail-text">Queremos que todo aquel que nos visite sienta la profunda hospitalidad de nuestra casa y de sus anfitriones, en un ambiente que combina la frescura de sus muros con la calidez de nuestro trato.</p>
 
-                <h3 style="margin-top: var(--space-lg); font-size: 2rem; margin-bottom: 1rem;">Un Homenaje a la Mujer</h3>
-                <p>Las distintas dependencias en las que está dividida la casa llevan nombres propios. Siendo un gran admirador de Joaquín Sabina, la lectura sobre su vida me llevó a descubrir a Chavela Vargas, y a través de ella, a Frida Kahlo.</p>
-                <p>Me parecieron mujeres extraordinariamente luchadoras, con una fuerza y pasión adelantadas a su época. Decidí que la mejor manera de honrar su legado era bautizar nuestras estancias con sus nombres, añadiendo también el de Lucía, completando así este humilde homenaje.</p>
+                <!-- Decorative divider -->
+                <div class="apt-detail-divider">
+                    <svg class="apt-detail-divider-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5z"></path><path d="M2 17l10 5 10-5"></path><path d="M2 12l10 5 10-5"></path></svg>
+                </div>
+
+                <!-- Key highlights -->
+                <div class="apt-detail-highlights">
+                    <div class="apt-highlight-item">
+                        <span class="apt-highlight-icon"><svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z" fill="currentColor" opacity="0.2"/><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z" stroke="currentColor" fill="none" stroke-width="1.5" stroke-linejoin="round"/><path d="M9 22V12h6v10" stroke="currentColor" fill="none" stroke-width="1.5" stroke-linejoin="round"/></svg></span>
+                        Casa de 1940
+                    </div>
+                    <div class="apt-highlight-item">
+                        <span class="apt-highlight-icon"><svg viewBox="0 0 24 24"><path d="M4 20h16M4 4h16M6 4v16M10 4v16M14 4v16M18 4v16" fill="currentColor" opacity="0.2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
+                        Diosa de la hospitalidad
+                    </div>
+                    <div class="apt-highlight-item">
+                        <span class="apt-highlight-icon"><svg viewBox="0 0 24 24"><path d="M12 22V10M12 10C8 10 5 7 5 3c4 0 7 3 7 7zm0 0c4 0 7-3 7-7-4 0-7 3-7 7z" fill="currentColor" opacity="0.2"/><path d="M12 22V10M12 10C8 10 5 7 5 3c4 0 7 3 7 7zm0 0c4 0 7-3 7-7-4 0-7 3-7 7z" stroke="currentColor" fill="none" stroke-width="1.5" stroke-linejoin="round"/></svg></span>
+                        Raíces en la sierra
+                    </div>
+                </div>
             </div>
-            
-            <div class="amenities-box fade-up">
-                <h3 style="font-size: 1.8rem; margin-bottom: 1rem;">Nuestra Esencia</h3>
-                <p style="color: var(--color-text-light); font-size: 0.95rem;">Un refugio donde el tiempo se detiene, diseñado para quienes valoran la historia y la tranquilidad.</p>
-                <ul class="amenities-list">
-                    <li>Construcción original de 1940</li>
-                    <li>Materiales nobles: Piedra y teja árabe</li>
-                    <li>Ubicación en el Camino de San Juan de la Cruz</li>
-                    <li>Vistas a la montaña</li>
-                    <li>Parking gratuito para todos los huéspedes</li>
+
+            <!-- Right: Features Card -->
+            <div class="apt-detail-equipment fade-up">
+                <div class="apt-equipment-header">
+                    <svg class="apt-equipment-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+                    <h3>Un Homenaje a la Mujer</h3>
+                </div>
+                <ul class="apt-equipment-list">
+                    <li><span class="apt-equip-bullet"></span><strong>Chavela Vargas:</strong> Una fuerza extraordinaria, luchadora y con una pasión adelantada a su época.</li>
+                    <li><span class="apt-equip-bullet"></span><strong>Frida Kahlo:</strong> Símbolo de creatividad, resiliencia y carácter inquebrantable.</li>
+                    <li><span class="apt-equip-bullet"></span><strong>Sabina:</strong> Inspiración bohemia que nos conectó literariamente con la historia de Chavela y Frida.</li>
+                    <li><span class="apt-equip-bullet"></span><strong>Lucía:</strong> El toque final que completa nuestro humilde homenaje a la figura femenina.</li>
+                    <li><span class="apt-equip-bullet"></span><strong>Materiales Nobles:</strong> Conservamos la piedra y la teja árabe originales de la morada.</li>
+                    <li><span class="apt-equip-bullet"></span><strong>Climatización Natural:</strong> La planta baja semienterrada actúa como un aislante natural todo el año.</li>
                 </ul>
             </div>
         </div>
-    </div>
+    </section>
 
-    <div class="slider-container slider-vertical-full fade-up">
-        <div class="slider-track">
-            <img src="Imágenes/Frida/5.jpg" alt="Detalle de la casa" class="slide">
-            <img src="Imágenes/Chavela/9.jpg" alt="Interior de piedra" class="slide">
-            <img src="Imágenes/Sabina/3.jpg" alt="Materiales originales" class="slide">
-        </div>
-        <div class="slider-controls">
-            <button class="slider-btn prev-btn" aria-label="Anterior">&#10094;</button>
-            <button class="slider-btn next-btn" aria-label="Siguiente">&#10095;</button>
-        </div>
-    </div>
 
-    <footer id="contacto" class="footer">
-        <div class="container footer-content">
-            <svg class="footer-logo" viewBox="0 0 200 60" width="160" height="48" xmlns="http://www.w3.org/2000/svg">
-                <text x="100" y="35" font-family="'Cormorant Garamond', serif" font-size="28" font-weight="600" letter-spacing="4" text-anchor="middle" fill="currentColor">XENIA</text>
-                <text x="100" y="50" font-family="'Inter', sans-serif" font-size="9" font-weight="300" letter-spacing="6" text-anchor="middle" fill="currentColor">ALOJAMIENTOS</text>
-            </svg>
-            <div class="footer-details">
-                <p>C/ Juan XXIII, Nº 30</p>
-                <p>info@alojamientosxenia.com | +34 123 456 789</p>
+    <!-- Footer -->
+    <footer class="footer kondo-footer">
+        <div class="container">
+            <div class="kondo-footer-grid">
+                <div class="kondo-footer-brand">
+                    <svg class="footer-logo" viewBox="0 0 200 60" width="160" height="48" xmlns="http://www.w3.org/2000/svg">
+                        <text x="100" y="35" font-family="'Cormorant Garamond', serif" font-size="28" font-weight="600" letter-spacing="4" text-anchor="middle" fill="currentColor">XENIA</text>
+                        <text x="100" y="50" font-family="'Inter', sans-serif" font-size="9" font-weight="300" letter-spacing="6" text-anchor="middle" fill="currentColor">ALOJAMIENTOS</text>
+                    </svg>
+                    <p class="kondo-text-light">Hospitalidad con historia en un entorno natural sin igual.</p>
+                </div>
+                <div class="kondo-footer-contact">
+                    <h4>Contacto</h4>
+                    <p>C/ Juan XXIII, Nº 30</p>
+                    <p>info@alojamientosxenia.com</p>
+                    <p>+34 123 456 789</p>
+                </div>
+                <div class="kondo-footer-links">
+                    <h4>Enlaces</h4>
+                    <a href="historia.html">La Historia</a>
+                    <a href="index.html#alojamientos">Alojamientos</a>
+                    <a href="entorno.html">El Entorno</a>
+                    <a href="contacto.html">Contacto</a>
+                </div>
             </div>
-            <p class="copyright" style="margin-top: 2rem;">&copy; <script>document.write(new Date().getFullYear())</script> Alojamientos Xenia.</p>
+            <div class="kondo-footer-bottom">
+                <p>&copy; <script>document.write(new Date().getFullYear())</script> Alojamientos Xenia. Todos los derechos reservados.</p>
+            </div>
         </div>
     </footer>
 

@@ -69,27 +69,40 @@ document.addEventListener('DOMContentLoaded', () => {
         const nextBtn = slider.querySelector('.next-btn');
         
         let currentIndex = 0;
-        
+        let autoPlayInterval;
+
         function updateSlider() {
             if (slides.length === 0) return;
-            // Calcular dinámicamente el ancho a desplazar (ancho de la foto + el gap)
             const slideWidth = slides[0].offsetWidth;
             const gap = parseFloat(window.getComputedStyle(track).gap) || 0;
             const moveAmount = slideWidth + gap;
             track.style.transform = `translateX(-${currentIndex * moveAmount}px)`;
         }
         
-        // Recalcular al redimensionar la ventana
+        function nextSlide() {
+            if (currentIndex < slides.length - 1) {
+                currentIndex++;
+            } else {
+                currentIndex = 0;
+            }
+            updateSlider();
+        }
+
+        function startAutoPlay() {
+            autoPlayInterval = setInterval(nextSlide, 3500); // 3.5 seconds
+        }
+
+        function resetAutoPlay() {
+            clearInterval(autoPlayInterval);
+            startAutoPlay();
+        }
+        
         window.addEventListener('resize', updateSlider);
         
         if (nextBtn) {
             nextBtn.addEventListener('click', () => {
-                if (currentIndex < slides.length - 1) {
-                    currentIndex++;
-                } else {
-                    currentIndex = 0; // Vuelve al inicio
-                }
-                updateSlider();
+                nextSlide();
+                resetAutoPlay();
             });
         }
         
@@ -98,10 +111,18 @@ document.addEventListener('DOMContentLoaded', () => {
                 if (currentIndex > 0) {
                     currentIndex--;
                 } else {
-                    currentIndex = slides.length - 1; // Va al final
+                    currentIndex = slides.length - 1;
                 }
                 updateSlider();
+                resetAutoPlay();
             });
         }
+
+        // Pause on hover
+        slider.addEventListener('mouseenter', () => clearInterval(autoPlayInterval));
+        slider.addEventListener('mouseleave', startAutoPlay);
+
+        // Start initial autoplay
+        startAutoPlay();
     });
 });
