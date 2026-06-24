@@ -53,9 +53,24 @@ document.addEventListener('DOMContentLoaded', () => {
     // Close mobile menu on link click
     if (navLinks) {
         navLinks.querySelectorAll('a').forEach(link => {
-            link.addEventListener('click', () => {
+            link.addEventListener('click', (e) => {
+                // Handle dropdowns on mobile
+                if (link.classList.contains('nav-dropdown-trigger') && window.innerWidth <= 768) {
+                    e.preventDefault();
+                    link.closest('.nav-dropdown').classList.toggle('active');
+                    return;
+                }
+                
                 navLinks.classList.remove('active');
                 menuToggle.classList.remove('active');
+                
+                // Reset hamburger icon
+                const spans = menuToggle.querySelectorAll('span');
+                if (spans.length === 3) {
+                    spans[0].style.transform = 'none';
+                    spans[1].style.opacity = '1';
+                    spans[2].style.transform = 'none';
+                }
             });
         });
     }

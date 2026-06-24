@@ -1219,6 +1219,33 @@ img {
     
     .nav-links a {
         color: var(--color-text);
+        display: block;
+        padding: 0.5rem 0;
+    }
+    
+    .nav-dropdown-menu {
+        position: static;
+        transform: none;
+        box-shadow: none;
+        opacity: 1;
+        visibility: visible;
+        display: none;
+        border: none;
+        padding: 0 0 0 1.5rem;
+        margin-top: 0.5rem;
+        min-width: auto;
+    }
+    
+    .nav-dropdown.active .nav-dropdown-menu {
+        display: block;
+    }
+    
+    .nav-dropdown.active .nav-dropdown-trigger::after {
+        transform: rotate(-135deg);
+    }
+    
+    .nav-dropdown-menu::before, .nav-dropdown::after {
+        display: none;
     }
     
     .menu-toggle {
